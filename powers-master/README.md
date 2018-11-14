@@ -7,7 +7,7 @@
 powers
 ======
 
-This is an R package that gives `sqrt()` friends by providing other power functions. Moreover, you this package allow you to perform a *boxcox* transformation to linear model fitted by `lm()`.
+This is an R package that gives `sqrt()` friends by providing other power functions. Moreover, you this package allow you to know if it is a good idea to apply the *boxcox* transformation to linear your fitted models by `lm()` and do it.
 
 Installation
 ------------
@@ -38,6 +38,14 @@ powers::cube(10)
 set.seed(548)
 y <- rpois(20,5)
 x <- rnorm(20)
+powers::need_boxcox(lm(y~x))
+```
+
+![](README-example_III-1.png)
+
+    #> [1] "Your linear model doesn't need boxcox transformation"
+
+``` r
 powers::apply_boxcox(lm(y~x))
 #> $lambda
 #> [1] 0.9
@@ -56,4 +64,4 @@ For Developers
 
 (Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
 
-Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`.
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `reciprocal` and `apply_boxcox`.

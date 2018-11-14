@@ -106,7 +106,7 @@ $transformed_response
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.64 0.12 0.81 NA NA 
+Time elapsed:  0.77 0.19 1.14 NA NA 
 > grDevices::dev.off()
 null device 
           1 

@@ -42,10 +42,22 @@ It even comes with the ability to display its output in plot form!
 reciprocal(1:10, plot_it=TRUE)
 ```
 
-Want to apply the **boxcox** transformation to your linear model?
+Are you not sure if your linear model needs a **boxcox** transformation?
 
 ```{r}
 fit <- lm(mpg ~ disp + drat + qsec , data=mtcars)
+need_boxcox(fit)
+```
+
+You can test it at different confidence levels!
+
+```{r}
+need_boxcox(fit,conf=0.99,plotit=FALSE)
+```
+
+If is needed, you can also apply the transformation to your linear model
+
+```{r}
 apply_boxcox(fit)
 ```
 

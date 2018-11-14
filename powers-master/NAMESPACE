@@ -2,6 +2,7 @@
 
 export(apply_boxcox)
 export(cube)
+export(need_boxcox)
 export(reciprocal)
 export(square)
 import(car)
