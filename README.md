@@ -1,4 +1,4 @@
-This is the repository of the [**2nd assigment**](https://github.com/STAT545-UBC/Classroom/blob/master/assignments/hw07/hw07.md) at [STAT547](http://stat545.com/Classroom/)
+## This is the repository of the [**2nd assigment**](https://github.com/STAT545-UBC/Classroom/blob/master/assignments/hw07/hw07.md) at [STAT547](http://stat545.com/Classroom/)
 
 Note: This repository is a modified version of the original [powers repository](https://github.com/vincenzocoia/powers), which cotains the `powers` package that was built on previous lectures.
 
